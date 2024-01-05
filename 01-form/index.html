@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <main id="register" class="container">
+        <form class="register__form" action="/" method="POST" enctype="application/x-www-form-urlencoded">
+            <div class="register__header">
+                <h2 class="register__title">Crea tu cuenta</h2>
+                <h3 class="register__subtitle">Completa tus datos para crear tu cuenta</h3>
+            </div>
+            <div class="form__box--grid">
+                <label class="form__label" for="name">Nombre:</label>
+                <input class="form__input" type="text" name="name" id="name" placeholder="nombre"
+                    autocomplete="username" required>
+            </div>
+            <div class="form__box--grid">
+                <label class="form__label" for="email">Email:</label>
+                <input class="form__input" type="email" name="email" id="email" placeholder="example@email.com"
+                    autocomplete="email" required>
+            </div>
+            <div class="form__box--grid">
+                <label class="form__label" for="password">Contraseña:</label>
+                <input class="form__input" type="password" name="password" id="password"
+                    placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
+                    autocomplete="current-password" required>
+            </div>
+            <div class="form__box--grid">
+                <label class="form__label" for="repassword">Repetir Contraseña:</label>
+                <input class="form__input" type="password" name="repassword" id="repassword"
+                    placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
+                    required>
+            </div>
+            <div class="form__submission">
+                <input class="form__btn btn btn--primary btn--large" type="submit" value="Registrar"
+                    id="registerButton">
+                <div class="form__terms">
+                    <p>¿Ya tenes una cuenta? <a href="/login">Inicia sesión</a></p>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
