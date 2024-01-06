@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Checkout</title>
+</head>
+
+<body>
+    <main class="container">
+        <section class="card">
+            <form action="/" method="POST">
+                <div class="credit-card">
+                    <div class="card__header">
+                        <div class="brand-logo"></div>
+                    </div>
+                    <div class="number__credit-card">
+                        <span>**** **** **** ****</span>
+                    </div>
+
+                </div>
+                </div>
+                <label for="input__credit-card">Número de tarjeta</label>
+                <input type="text" name="input__credit-card" id="input__credit-card" pattern="\d{16}" required>
+                <div class="card__info">
+                    <label for="input__card-holder">Titular de la tarjeta</label>
+                    <input type="text" name="input__card-holder" id="input__card-holder" placeholder="Nombre Completo"
+                        required>
+                    <label for="input__expire">Fecha de vencimiento</label>
+                    <input type="text" name="input__expire" id="input__expire" placeholder="MM/AA" pattern="\d{2}/\d{2}"
+                        required>
+                    <label for="input__code">Código de seguridad</label>
+                    <input type="text" name="input__code" id="input__code" required pattern="\d{3}"
+                        title="Debe tener 3 dígitos numéricos">
+
+                    <button type="submit">Pagar</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
