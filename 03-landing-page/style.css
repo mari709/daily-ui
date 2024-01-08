@@ -89,7 +89,7 @@ header {
     display: inline-block;
     width: 1.2rem;
     height: 0.8rem;
-    margin-left: 0.1rem;
+    margin-left: 1rem;
     background-image: url("assets/icons/down-arrow.svg");
 }
 
