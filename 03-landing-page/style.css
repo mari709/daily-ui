@@ -1,0 +1,174 @@
+:root {
+    /*colores*/
+    --primary-color: #6a6092;
+    --primary-light-color: #ffe9d5;
+    --secondary-color: #1475bc;
+    --secondary-light-color: #e7f5ff;
+    --text-color: #201e1c;
+    --off-white: #faf8f7;
+
+    /*tipografias*/
+    --primary-font: 'DM Sans', sans-serif;
+    --script-font: 'Dancing Script', cursive;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--primary-font);
+    color: var(--text-color);
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 3.2rem;
+    margin-bottom: 2rem;
+}
+body {
+    font-family: var(--primary-font);
+    background-color: var(--off-white);
+}
+header {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 32rem;
+    height: 44rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--off-white);
+}
+
+.header__title-container {
+    width: 90%;
+    min-width: 28.8rem;
+    max-width: 90rem;
+    align-self: center;
+}
+
+.header__title-container h1 {
+    font-size: 3.4rem;
+    line-height: 4rem;
+}
+
+.header__title-container p {
+    margin-top: 2.8rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    font-style: normal;
+}
+
+.header__title-container .header__button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    transform: translateY(50%);
+    display: block;
+    padding: 1.6rem;
+    width: 20rem;
+    background-color: var(--off-white);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.header__button span {
+    display: inline-block;
+    width: 1.2rem;
+    height: 0.8rem;
+    margin-left: 0.1rem;
+    background-image: url("assets/icons/down-arrow.svg");
+}
+
+section, main {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.main__presentation-container, .main__features-container {
+    min-width: 32rem;
+    height: auto;
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.main__features-container .main__background-img {
+    max-width: 32rem;
+    height: 32rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    background-image: url(assets/images/libro.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main__presentation-container p {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.main__cta-button {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    width: 15rem;
+    height: 4.8rem;
+    background-color: var(--primary-color);
+    border-radius: 0.8rem;
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    line-height: 1.8rem;
+    color: var(--off-white);
+}
+
+.main__features-container h2, .main__presentation-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.main__features-list, .main__presentation-container .main__presentation-list {
+    list-style-type: none; 
+    padding: 0;
+    text-align: left;
+}
+
+.main__features-list li, .main__presentation-container .main__presentation-list li {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 15px;
+    position: relative; 
+}
+
+.main__features-list li:before, .main__presentation-container .main__presentation-list li:before {
+    content: '•'; 
+    color: var(--primary-color);
+    font-size: 3rem;
+    position: absolute;
+    left: -1.5rem;
+}
+
+@media screen and (min-width: 720px){
+    section, main {
+        max-width: 60%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
