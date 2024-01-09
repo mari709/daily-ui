@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;500;600&display=swap" rel="stylesheet">
+    <title>Calculadora de Interés Compuesto</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="calculator__header"><h1>Calculadora de Interés Compuesto</h1></div>
+        <div class="calculator__input">
+            <label class="calculator__label" for="principal">Principal:</label>
+            <input class="calculator__input-field" type="number" id="principal" placeholder="Monto principal">
+        </div>
+        <div class="calculator__input">
+            <label class="calculator__label" for="rate">Tasa de Interés (%):</label>
+            <input class="calculator__input-field" type="number" id="rate" placeholder="Tasa de interés">
+        </div>
+        <div class="calculator__input">
+            <label class="calculator__label" for="time">Tiempo (años):</label>
+            <input class="calculator__input-field" type="number" id="time" placeholder="Número de años">
+        </div>
+        <div class="calculator__input">
+            <label class="calculator__label" for="frequency">Frecuencia de Capitalización:</label>
+            <select class="calculator__input-field" id="frequency">
+                <option value="1">Anual</option>
+                <option value="12">Mensual</option>
+                <option value="4">Trimestral</option>
+                <option value="365">Diaria</option>
+            </select>
+        </div>
+        <button class="calculator__calculate-btn">Calcular</button>
+        <div class="calculator__result">El resultado se mostrará aquí.</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
