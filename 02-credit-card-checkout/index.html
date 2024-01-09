@@ -17,13 +17,14 @@
                         <div class="brand-logo"></div>
                     </div>
                     <div class="number__credit-card">
-                        <span>**** **** **** ****</span>
+                        <span id="span__number__credit-card">**** **** **** ****</span>
                     </div>
 
                 </div>
                 </div>
                 <label for="input__credit-card">Número de tarjeta</label>
-                <input type="text" name="input__credit-card" id="input__credit-card" pattern="\d{16}" required>
+                <input type="number" name="input__credit-card" id="input__credit-card" maxlength="16" pattern="[0-9]{16}" required
+                oninput="updateCreditCardNumber(this.value)">
                 <div class="card__info">
                     <label for="input__card-holder">Titular de la tarjeta</label>
                     <input type="text" name="input__card-holder" id="input__card-holder" placeholder="Nombre Completo"
@@ -39,6 +40,19 @@
             </form>
         </section>
     </main>
+    <script>
+        function updateCreditCardNumber(value) {
+            const unmaskedValue = value.replace(/\D/g, ''); // Elimina caracteres no numéricos
+            const formattedValue = formatCreditCardNumber(unmaskedValue);
+            document.getElementById('span__number__credit-card').textContent = formattedValue;
+        }
+
+        function formatCreditCardNumber(value) {
+            // Divide el valor en grupos de cuatro dígitos y los une con espacios
+            const parts = value.match(/[\s\S]{1,4}/g) || [];
+            return parts.join(' ');
+        }
+        </script>
 </body>
 
 </html>
