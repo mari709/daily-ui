@@ -1,0 +1,19 @@
+Perfil de usuario:
+Carmen Lopez
+
+Información personal
+nombre y apellido: Carmen Lope
+usuario: carope
+Fecha de nacimiento: 10/01/2000
+País: Argentina
+
+Bio
+Me gustar viajar y hacer que cada momento cuente #vivalavida
+
+Antecedentes profesionales
+- Especialista en Marketing Digital en Soluciones MKT
+
+Contacto
+email: carmenlope@mimail.com
+Linkedin: https://linkedin.com/carmenlope
+instagram: https://instagram.com/carmenlope
