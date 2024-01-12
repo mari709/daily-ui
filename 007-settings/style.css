@@ -1,0 +1,34 @@
+body {
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+}
+
+.round-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.round-button:hover {
+  background-color: #c4c4c4;
+}
+.round-button:nth-child(3) {
+  background-color: #cb4f40;
+  color: #fff;
+}
